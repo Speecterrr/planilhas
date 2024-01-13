@@ -1,0 +1,90 @@
+/* Reset básico para remover padding e margin padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to left, #260938, #000000 50%, #260938 100%);
+    font-family: Arial, sans-serif; /* Escolha uma fonte legível */
+    color: white; /* Cor do texto do corpo em branco */
+}
+
+/* Estilo para o container da tabela */
+.container {
+    width: 50%; /* Largura do container como porcentagem da largura da janela */
+    margin: 0 auto; /* Centraliza o container */
+    max-height: 90vh; /* Altura máxima para evitar rolagem da página inteira */
+    overflow: hidden; /* Removendo a barra de rolagem vertical */
+    background-color: rgba(233, 233, 233, 0.1); /* Fundo semi-transparente */
+    padding: 2px; /* Espaçamento interno */
+    border-radius: 1px; /* Bordas arredondadas */
+    box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.3); /* Sombra suave */
+}
+
+/* Estilo para a tabela */
+table {
+    width: 90%; /* Faz a tabela ocupar toda a largura do container */
+    border-collapse: collapse;
+}
+
+/* Estilo para as células da tabela */
+th, td {
+    text-align: left;
+    border-bottom: 2px solid #311d46; /* Linha separadora entre as linhas da tabela */
+    transition: background-color 0.3s ease; /* Transição suave para mudança de cor ao passar o mouse */
+    font-size: 18px; /* Tamanho da fonte maior */
+}
+
+/* Estilo para o cabeçalho da tabela */
+th {
+    background-color: #260938;
+    color: white; /* Texto branco no cabeçalho */
+    font-weight: bold; /* Texto em negrito no cabeçalho */
+    font-size: 20px; /* Tamanho da fonte maior */
+}
+
+/* Estilo para as células da tabela quando o mouse passa sobre elas */
+tr:hover {
+    background-color: #311d46; /* Cor de fundo suave quando o mouse passa sobre a linha */
+    color: white; /* Texto branco ao passar o mouse */
+}
+
+/* Estilo para o botão */
+button {
+    background-color: #260938;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 10;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px; /* Tamanho da fonte maior */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para o campo de entrada (input) */
+input[type="number"] {
+    width: 70px;
+    padding: 3px;
+    margin-top: 3px;
+    border: 1px solid #d1cece;
+    border-radius: 6px;
+    font-size: 15px; /* Tamanho da fonte maior */
+}
+
+/* Estilo para o texto do total geral */
+#totalGeral {
+    font-weight: bold;
+    font-size: 30px; /* Tamanho da fonte maior */
+    text-align: center; /* Centraliza horizontalmente */
+
+}
+
+/* Estilo para o texto do título da página */
+h2 {
+    text-align: center;
+    font-size: 25px; /* Tamanho da fonte maior */
+}
+
